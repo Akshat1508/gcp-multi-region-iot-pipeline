@@ -1,0 +1,19 @@
+// telemetry.proto
+syntax = "proto3";
+
+message TelemetryData {
+  string device_id = 1;
+  double temperature = 2;
+  double latitude = 3;
+  double longitude = 4;
+  int64 timestamp = 5;
+}
+
+message Ack {
+  bool success = 1;
+  string message = 2;
+}
+
+service TelemetryService {
+  rpc SendTelemetry (TelemetryData) returns (Ack);
+}

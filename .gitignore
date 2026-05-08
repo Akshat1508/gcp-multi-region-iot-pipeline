@@ -1,0 +1,12 @@
+# Python environments
+venv/
+env/
+__pycache__/
+
+# Google Cloud / Secrets
+*.json
+.env
+secret_keys/
+
+# OS generated files
+.DS_Store

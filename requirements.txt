@@ -1,0 +1,4 @@
+grpcio
+protobuf
+google-cloud-pubsub
+grpcio-tools
